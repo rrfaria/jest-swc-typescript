@@ -1,4 +1,4 @@
-import { isEnabledCancelaPedido } from '../src/desabilitar-btn-cancelar';
+import { isEnabledCancelaPedido, verificaOutrosStatus } from '../src/desabilitar-btn-cancelar';
 
 describe('isEnabledCancelaPedido', () => {
 
@@ -36,5 +36,15 @@ describe('isEnabledCancelaPedido', () => {
     const detailsData = { statusPedido: 'Faturado', entregas: [{ statusEntrega: 'Aprovado' }] };
     const result = isEnabledCancelaPedido(detailsData);
     expect(result).toBe(false);
+  });
+
+  test('deve desabilitar o botão quando não passar os detalhes do pedido', () => {
+    const result = isEnabledCancelaPedido(undefined);
+    expect(result).toBe(false);
+  });
+
+  test('deve retornar quando o detalhe do pedido nao for passado', () => {
+    const result = verificaOutrosStatus(undefined);
+    expect(result).toBe(true);
   });
 });

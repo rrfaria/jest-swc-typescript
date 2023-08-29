@@ -1,9 +1,9 @@
 
 export function isEnabledCancelaPedido(detailsData) {
-  return (detailsData.statusPedido !== 'Aprovado' && verificaOutrosStatus(detailsData)) || !!detailsData.isSuccess;
+  return !!detailsData && ((detailsData.statusPedido !== 'Aprovado' && verificaOutrosStatus(detailsData)) || !!detailsData.isSuccess);
 }
 
-function verificaOutrosStatus(detailsData) {
+export function verificaOutrosStatus(detailsData) {
   var entrega = (detailsData || {}).entregas || [];
   var retorno = true;
   entrega.forEach(function (entr) {

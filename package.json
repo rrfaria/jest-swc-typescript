@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx jest"
+    "start": "npx jest",
+    "coverage": "npx jest --collect-coverage"
   },
   "author": "",
   "license": "ISC",

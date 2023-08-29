@@ -37,4 +37,10 @@ describe('isEnabledCancelaPedido', () => {
     const result = disableBtnCancelOrder(detailsData);
     expect(result).toBe(false);
   });
+
+  test('deve desabilitar o botão quando o status do pedido for passado mas as entregas não forem passada', () => {
+    const detailsData = { statusPedido: 'Faturado'};
+    const result = disableBtnCancelOrder(detailsData);
+    expect(result).toBe(true);
+  });
 });

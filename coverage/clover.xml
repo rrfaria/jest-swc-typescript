@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1693350481934" clover="3.2.0">
+  <project timestamp="1693350481934" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8" elements="36" coveredelements="36" complexity="0" loc="14" ncloc="14" packages="1" files="2" classes="2"/>
+    <file name="desabilitar-btn-cancelar-refac.ts" path="/mnt/d/projetos/jest-swc-typescript/src/desabilitar-btn-cancelar-refac.ts">
+      <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="5"/>
+      <line num="1" count="7" type="stmt"/>
+      <line num="2" count="7" type="cond" truecount="3" falsecount="0"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="7" type="stmt"/>
+    </file>
+    <file name="desabilitar-btn-cancelar.ts" path="/mnt/d/projetos/jest-swc-typescript/src/desabilitar-btn-cancelar.ts">
+      <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+      <line num="2" count="7" type="stmt"/>
+      <line num="3" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="5" type="stmt"/>
+    </file>
+  </project>
+</coverage>
